@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stocks portifolio</title>
+</head>
+<body>
+    <h1>Stocks portifolio</h1>
+
+    <hr/>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Empresa</th>
+                <th>Quantidade</th>
+                <th>Valor Unitario</th>
+                <th>Valor TOtal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr for (stock in data.stocks)>
+                <th>${stock.code}</th>
+                <th>${stock.name}</th>
+                <th>${stock.amount}</th>
+                <th>R$ ${stock.price}</th>
+                <th>R$ ${parseFloat(stock.amount) * stock.price}</th>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
